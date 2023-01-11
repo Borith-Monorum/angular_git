@@ -36,15 +36,67 @@ $project1-theme: mat.define-light-theme((
 @include mat.all-component-themes($project1-theme);
 
 /* You can add global styles to this file, and also import other style files */
+.special-job{
+  background-color: red;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  border-radius: 999px 0 999px 0;
+  padding: 3px 0 3px 0;
+  width: 80px;
+  text-align:center;
+  color: white;
+  background-color: #e16d48;
+  font-size: 12px;
+}
+
+.hj-btn{
+  background-color: #20c9f9;
+  color: white;
+  font-size: 14px;
+  border:1px solid #20c9f9;
+  border-radius: 999px;
+  padding: 10px 15px;
+  margin: 0 5px;
+
+}
+.hj-btn:hover{
+  background-color: #00bbef;
+  color: white;
+  font-size: 14px;
+  border:1px solid #20c9f9;
+  border-radius: 999px;
+  padding: 10px 15px;
+  margin: 0 5px;
+  transition: .1s;
+}
+.hj-btn:active{
+  background-color: #0589ae;
+}
+.ng-star-inserted{
+  font-size: 12px;
+  color: #0000;
+
+}
+.hj-clickable{
+  color: var(--secondary-color);
+  cursor: pointer;
+  line-height: 2.5;
+}
+.hj-com-name{
+  font-size: 16px;
+  color: #333;
+}
 
 *{
   padding: 0 ;
   margin: 0;
-  transition: all .3s ease-out;
+  transition: all .3s ;
+  font-family:'Gilroy' Arial, Helvetica, sans-serif;
 }
 body{
-  font-family: Arial, Helvetica, sans-serif;
-  
+
+
   background-color: #f6fbfc;
 
 }
