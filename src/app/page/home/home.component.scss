@@ -103,3 +103,30 @@
     padding: 10px 10px;
   }
 
+  @keyframes badge_float {50%{top:-5px;}
+                   100%{top:1px;}};
+  .hj-badge{
+    position:relative;
+    background-color: var(--primary-color);
+    padding: 2px 7px;
+    border-radius: 99px;
+    color: white;
+    // animation: badge_float ease 1s infinite;
+    top: 0px;
+    height: 100px;
+  }
+   .hj-list:hover .hj-badge{
+    animation: badge_float ease 1s infinite;
+  }
+
+  .hj-clickable:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+  }
+
+
+  //sticky
+.sticky{
+  position: sticky;
+  top: 0;
+}

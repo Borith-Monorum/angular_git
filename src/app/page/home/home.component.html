@@ -54,47 +54,42 @@
     </div>
   </div>
 
-  <mat-tab-group fitInkBarToContent mat-stretch-tabs="false" mat-align-tabs="center">
-    <mat-tab label="Function" class="">
-      <div class="row mt-4">
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">test 2</a></div>
-    
-      </div>
+  <mat-tab-group fitInkBarToContent mat-stretch-tabs="false" mat-align-tabs="center" >
+    <mat-tab label="Function" >
+<div class="row overflow-hidden w-100">
+  <div class="hj-list  col-sm-6 col-md-4 col-lg-3" *ngFor="let hj of jobData">
+      <a href="" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
+  </div>
+</div>
+
     </mat-tab>
     <mat-tab label="Industry" >
-      <div class="row mt-4">
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
+      <div class="row overflow-hidden w-100">
+        <div class="hj-list  col-sm-6 col-md-4 col-lg-3" *ngFor="let hj of jobData">
+            <a href="" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
+        </div>
       </div>
     </mat-tab>
     <mat-tab label="Location">
-      <div class="row mt-4">
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
+      <div class="row overflow-hidden w-100">
+        <div class="hj-list  col-sm-6 col-md-4 col-lg-3" *ngFor="let hj of jobData">
+            <a href="" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
+        </div>
       </div>
+
     </mat-tab>
     <mat-tab label="Salary">
-      <div class="row mt-4">
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
+      <div class="row overflow-hidden w-100">
+        <div class="hj-list  col-sm-6 col-md-4 col-lg-3" *ngFor="let hj of jobData">
+            <a href="" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
+        </div>
       </div>
     </mat-tab>
     <mat-tab label="Period">
-      <div class="row mt-4 ">
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
-        <div class="col-lg-3 col-sm-6 col-md-4"><a href="">Information</a></div>
+      <div class="row overflow-hidden w-100">
+        <div class="hj-list  col-sm-6 col-md-4 col-lg-3" *ngFor="let hj of jobData">
+            <a href="" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
+        </div>
       </div>
     </mat-tab>
 
@@ -144,46 +139,13 @@
 
   <div class=" row ">
     <!-- Employers Who are Hiring -->
-    <div class="col-md-5 d-none d-md-block">
+    <div class="col-md-5 d-none d-md-block sticky">
       <div class="content ">
         <p class="px-4">Employers Who are Hiring</p>
         <mat-divider></mat-divider>
         <div class="row hj-img p-3">
-          <div class="col-3 hj-hover-img">
-            <img src="https://ad.hrincjob.com/www/images/7c8423456718179c1781c5127cf6c1cf.png" width="100%" alt="">
-          </div>
-          <div class="col-3 hj-hover-img">
-            <img src="https://ad.hrincjob.com/www/images/0ea984b0208d0dce7aca67f830b452f0.png" width="100%" alt="">
-          </div>
-          <div class="col-3 hj-hover-img">
-            <img src="https://ad.hrincjob.com/www/images/fdcfcca65b600e9f3c1d18c8e85b440c.png" width="100%" alt="">
-          </div>
-          <div class="col-3 hj-hover-img">
-            <img src="https://ad.hrincjob.com/www/images/7126efbc6666b8c46ad25d5902b415e5.png" width="100%" alt="">
-          </div>
-          <div class="col-3 hj-hover-img">
-            <img src="https://ad.hrincjob.com/www/images/7c8423456718179c1781c5127cf6c1cf.png" width="100%" alt="">
-          </div>
-          <div class="col-3 hj-hover-img">
-            <img src="https://ad.hrincjob.com/www/images/0ea984b0208d0dce7aca67f830b452f0.png" width="100%" alt="">
-          </div>
-          <div class="col-3 hj-hover-img">
-            <img src="https://ad.hrincjob.com/www/images/fdcfcca65b600e9f3c1d18c8e85b440c.png" width="100%" alt="">
-          </div>
-          <div class="col-3 hj-hover-img">
-            <img src="https://ad.hrincjob.com/www/images/7126efbc6666b8c46ad25d5902b415e5.png" width="100%" alt="">
-          </div>
-          <div class="col-3 hj-hover-img">
-            <img src="https://ad.hrincjob.com/www/images/7c8423456718179c1781c5127cf6c1cf.png" width="100%" alt="">
-          </div>
-          <div class="col-3 hj-hover-img">
-            <img src="https://ad.hrincjob.com/www/images/0ea984b0208d0dce7aca67f830b452f0.png" width="100%" alt="">
-          </div>
-          <div class="col-3 hj-hover-img">
-            <img src="https://ad.hrincjob.com/www/images/fdcfcca65b600e9f3c1d18c8e85b440c.png" width="100%" alt="">
-          </div>
-          <div class="col-3 hj-hover-img">
-            <img src="https://ad.hrincjob.com/www/images/7126efbc6666b8c46ad25d5902b415e5.png" width="100%" alt="">
+          <div class="col-3 hj-hover-img mt-4" *ngFor="let hj1 of jobData1">
+            <img src="{{hj1.sponsor}}" width="100%" alt="">
           </div>
         </div>
       </div>
@@ -204,11 +166,11 @@
         </div>
         <mat-divider></mat-divider>
                 <div class="row  ms-1 m-0">
-                  <div class="col-xl-6 col-12 p-0 job-list overflow-hidden">
+                  <div class="col-xl-6 col-12 p-0 job-list overflow-hidden" *ngFor="let hj2 of jobData2">
                     <div class=" d-flex py-2 border-end border-bottom px-0">
                       <div class="d-flex job-title flex-grow-1">
-                        <div class="border-img ms-3 m-2">
-                          <img src="https://ad.hrincjob.com/www/images/7c8423456718179c1781c5127cf6c1cf.png" class=" img-fluid  img-job" alt="">
+                        <div class="border-img ms-3 m-2" >
+                          <img src="{{hj2.logo}}" class=" img-fluid  img-job" alt="">
                         </div>
                         <div class="mx-2">
                           <a class="nav-link" href=""routerLink="job-detail"><h5 class="card-title overflow-hidden"  matTooltipPosition="above" matTooltip="Administration Director">Administration Director </h5></a>
