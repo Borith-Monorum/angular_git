@@ -5,7 +5,7 @@ import { HomeComponent } from './page/home/home.component';
 import { MenuComponent } from './page/menu/menu.component';
 import { JobDetailComponent } from './page/home/job-detail/job-detail.component';
 import { RouterModule, Routes } from '@angular/router';
-
+import { JobCategoryComponent } from './page/home/job-category/job-category.component';
 const routes: Routes = [
   // {path: '',component:HomeComponent},
   {path:'', redirectTo: 'home',pathMatch: 'full' },
@@ -15,6 +15,7 @@ const routes: Routes = [
   {path: 'asean',component:ContactComponent},
   //Home/job-detail
   {path: 'home/job-detail',component:JobDetailComponent},
+  {path: 'home/job-category',component:JobCategoryComponent},
 ];
 
 @NgModule({

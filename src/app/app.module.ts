@@ -30,6 +30,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { JobDetailComponent } from './page/home/job-detail/job-detail.component';
 import { HttpClientModule } from '@angular/common/http';
+import { JobCategoryComponent } from './page/home/job-category/job-category.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     DialogExampleComponent,
     JobDetailComponent,
+    JobCategoryComponent,
 
   ],
 
