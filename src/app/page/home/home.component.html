@@ -58,7 +58,7 @@
     <mat-tab label="Function" >
 <div class="row overflow-hidden w-100">
   <div class="hj-list  col-sm-6 col-md-4 col-lg-3" *ngFor="let hj of jobData">
-      <a href="" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
+      <a href="" routerLink="job-category" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
   </div>
 </div>
 
@@ -66,29 +66,29 @@
     <mat-tab label="Industry" >
       <div class="row overflow-hidden w-100">
         <div class="hj-list  col-sm-6 col-md-4 col-lg-3" *ngFor="let hj of jobData">
-            <a href="" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
+            <a href="" routerLink="job-category" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
         </div>
       </div>
     </mat-tab>
     <mat-tab label="Location">
       <div class="row overflow-hidden w-100">
         <div class="hj-list  col-sm-6 col-md-4 col-lg-3" *ngFor="let hj of jobData">
-            <a href="" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
+            <a href="" routLink="job-category" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
         </div>
       </div>
 
     </mat-tab>
     <mat-tab label="Salary">
       <div class="row overflow-hidden w-100">
-        <div class="hj-list  col-sm-6 col-md-4 col-lg-3" *ngFor="let hj of jobData">
-            <a href="" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
+        <div class="hj-list col-sm-6 col-md-4 col-lg-3" *ngFor="let hj of jobData">
+            <a href="" routerLink="job-category" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
         </div>
       </div>
     </mat-tab>
     <mat-tab label="Period">
       <div class="row overflow-hidden w-100">
         <div class="hj-list  col-sm-6 col-md-4 col-lg-3" *ngFor="let hj of jobData">
-            <a href="" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
+            <a href="" routerLink="job-category" class="d-inline hj-clickable nav-link ">{{hj.job_list}}  </a> <span class="hj-badge">{{hj.badge}}</span>
         </div>
       </div>
     </mat-tab>
@@ -97,11 +97,12 @@
 </div>
 <!-- end Category-job  -->
 
-
-  <div class="content mx-0 my-4 row   py-3 ">
-    <span class="col-xl-10 col-lg-9 col-md-8 col-sm-7  fs-5 text-center align-self-center ">"Push your self more and more to learn now thing" <span class="fw-bold">-BORITH monorom</span> </span>
+<!-- quote  -->
+  <div class="content mx-0 my-4 row   py-3 " *ngFor="let hj_quote of quote">
+    <span class="col-xl-10 col-lg-9 col-md-8 col-sm-7  fs-5 text-center align-self-center ">"{{hj_quote.quote_letter}}" <span class="fw-bold">-{{hj_quote.quote_name}}</span> </span>
     <button mat-flat-button class="col-xl-2 col-lg-3 gy-3 gy-sm-0  col-md-4 col-sm-5 border  text-light py-4 rounded-pill " style="background-color: var(--primary-color);" ><mat-icon>search</mat-icon>Get Quotations</button>
   </div>
+<!--end quote  -->
 
   <!-- Premium Employers  -->
   <div class="content p-0 px-4 py-3 d-none d-md-block">
@@ -139,7 +140,7 @@
 
   <div class=" row ">
     <!-- Employers Who are Hiring -->
-    <div class="col-md-5 d-none d-md-block sticky">
+    <div class="col-md-5 d-none d-md-block ">
       <div class="content ">
         <p class="px-4">Employers Who are Hiring</p>
         <mat-divider></mat-divider>
@@ -155,7 +156,7 @@
 
     <!-- Vacancies List -->
     <div class="col-md-7 col-12">
-      <div class="content p-0">
+      <div class="content">
         <div class="row mt-3">
           <div class="col">
             <p class="px-4">Vacancies List</p>
@@ -173,10 +174,10 @@
                           <img src="{{hj2.logo}}" class=" img-fluid  img-job" alt="">
                         </div>
                         <div class="mx-2">
-                          <a class="nav-link" href=""routerLink="job-detail"><h5 class="card-title overflow-hidden"  matTooltipPosition="above" matTooltip="Administration Director">Administration Director </h5></a>
-                          <h6 class="card-subtitle overflow-hidden"matTooltipPosition="below" matTooltip="HRINC (cambodia) Co., Ltd">HRINC (cambodia) Co., Ltd</h6>
+                          <a class="nav-link" href="" routerLink="job-detail"><h5 class="card-title overflow-hidden"  matTooltipPosition="above" matTooltip="{{hj2.company}}">{{hj2.company}} </h5></a>
+                          <h6 class="card-subtitle overflow-hidden"matTooltipPosition="below" matTooltip="{{hj2.profile}} (cambodia) Co., Ltd">{{hj2.profile}} (cambodia) Co., Ltd</h6>
                           <div class="card-text navbar">
-                                <a href="" class="nav-link"><i class="bi bi-calendar"></i> Feb 3, 2023</a>&nbsp;&nbsp;&nbsp;
+                                <a href="" class="nav-link"><i class="bi bi-calendar"></i> {{hj2.date}} {{hj2.datenum}}, 2023</a>&nbsp;&nbsp;&nbsp;
                                 <a href="" class="nav-link"> <span class=""><i class="bi bi-currency-dollar"> </i> Login to see salary</span></a>
                           </div>
                         </div>

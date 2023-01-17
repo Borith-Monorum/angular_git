@@ -20,10 +20,13 @@ constructor(private service:JobListService){}
   jobData:any;
   jobData1:any;
   jobData2:any;
+  quote:any;
+
   ngOnInit(): void{
     this.jobData = this.service.jobdetail,
     this.jobData1 = this.service.jobdetail1,
-    this.jobData2 = this.service.jobdetail2
+    this.jobData2 = this.service.jobdetail2,
+    this.quote = this.service.quote_detail
   }
 }
 
