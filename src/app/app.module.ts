@@ -29,7 +29,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatCardModule} from '@angular/material/card';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { JobDetailComponent } from './page/home/job-detail/job-detail.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,6 +67,7 @@ import { JobDetailComponent } from './page/home/job-detail/job-detail.component'
     MatSlideToggleModule,
     MatCardModule,
     MatTooltipModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
